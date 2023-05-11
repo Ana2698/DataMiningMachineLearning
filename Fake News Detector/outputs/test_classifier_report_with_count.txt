@@ -1,0 +1,35 @@
+CLASSIFIER with Count Vectorizer TEST REPORT        
+Linear-SVC     
+Train Accuracy       
+100.0     
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98      6982
+           1       0.98      0.98      0.98      6353
+
+    accuracy                           0.98     13335
+   macro avg       0.98      0.98      0.98     13335
+weighted avg       0.98      0.98      0.98     13335
+Linear Regression     
+Train Accuracy       
+99.99630628301259     
+              precision    recall  f1-score   support
+
+           0       0.99      0.98      0.98      6982
+           1       0.98      0.99      0.98      6353
+
+    accuracy                           0.98     13335
+   macro avg       0.98      0.98      0.98     13335
+weighted avg       0.98      0.98      0.98     13335
+MultinomialNB     
+Train Accuracy       
+94.50374912274222     
+              precision    recall  f1-score   support
+
+           0       0.94      0.95      0.94      6982
+           1       0.94      0.93      0.94      6353
+
+    accuracy                           0.94     13335
+   macro avg       0.94      0.94      0.94     13335
+weighted avg       0.94      0.94      0.94     13335
+

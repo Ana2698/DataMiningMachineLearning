@@ -1,0 +1,34 @@
+CLASSIFIER with TF-IDF vectorizer TEST REPORT        
+Linear-SVC     
+Train Accuracy       
+99.88918849037786     
+              precision    recall  f1-score   support
+
+           0       0.99      0.98      0.99      6982
+           1       0.98      0.99      0.98      6353
+
+    accuracy                           0.99     13335
+   macro avg       0.99      0.99      0.99     13335
+weighted avg       0.99      0.99      0.99     13335
+Linear Regression     
+Train Accuracy       
+98.4966571861264     
+              precision    recall  f1-score   support
+
+           0       0.98      0.97      0.98      6982
+           1       0.97      0.98      0.97      6353
+
+    accuracy                           0.97     13335
+   macro avg       0.97      0.98      0.97     13335
+weighted avg       0.97      0.97      0.97     13335
+MultinomialNB     
+Train Accuracy       
+93.20356074317586     
+              precision    recall  f1-score   support
+
+           0       0.92      0.93      0.93      6982
+           1       0.93      0.92      0.92      6353
+
+    accuracy                           0.93     13335
+   macro avg       0.93      0.93      0.93     13335
+weighted avg       0.93      0.93      0.93     13335
