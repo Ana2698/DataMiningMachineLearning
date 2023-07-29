@@ -1,4 +1,4 @@
-# Q1. Summary
+# Summary of the project
 ### - Dataset : The dataset used to for training and testing in project was obtained from The Information Security and Object Technology (ISOT) Research Lab of 
 ### University of Victoria it is the ISOT Fake News Dataset to perform text classification
 ### - Dataset cleaning: The "Fake" and "True" news csv files are merged and the news texts are mapped to two classes 1: True and 0: False and columns like date and subject are dropped
@@ -15,8 +15,8 @@
 ### - Validation tests on Linear Classifier models: Validation tests are performed on all 6 models using 2 seperate datasets.
 ### - Plotting results: Classification reports, Training, Testing and Validation plots generated for model comparison.
 
-# Q2. Dataset Description
-## Dataset Description
+#  Dataset Description
+## Description
 The name of the dataset is Information Security and Object Technology (ISOT) fake news dataset it can be found here [Dataset](https://onlineacademiccommunity.uvic.ca/isot/2022/11/27/fake-news-detection-datasets/)
 The dataset consists two sets of data Fake news and True news. The fake news samples are collected from various different sources and are flagged as fake by Politico.com.
 The true (legitimate) news are obtained from the news website Reuters.com.
@@ -40,7 +40,7 @@ The group not of interest is True news which denoted by 1.
 ### AUC values:
 Note, I have the not calculated the AUC values for this project as it does not make sense for my project. I am only using the text and title columns for my models because the aim of the project here is text classification.
 
-# Q3. Details
+# Details
 #### Dataset Cleaning:
 The original dataset consists of two different files "Fake.csv" and "True.csv" which are read into two different dataframes. The two dataframes are then merged and each sample in the text column is mapped to its class label 1(True news)
 or 0 (Fake news). The dataset is split into two parts 80 % of the dataset is taken for training and testing and 20% is sampled separated from the dataset and kept for validation later.
