@@ -11,13 +11,6 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.neighbors import KNeighborsClassifier
 from tensorflow import keras
 
-"""
-This function below creates the kfold_cnn,
- kfold_data and kfold_mnist json files.
-The code is taken from the instructions
- provide for assignment 3 submission.
-"""
-
 
 def save_kfold(kfold_scores: pd.DataFrame, function: Literal[1, 2]) -> None:
     from pathlib import Path
@@ -95,7 +88,7 @@ def save_kfold(kfold_scores: pd.DataFrame, function: Literal[1, 2]) -> None:
 
 """
 The function below takes X and y data as input and K-fold splits them
-This function is only to perform kfold split on question 1 and 3 data
+This function is only to perform kfold split on function 1 data
 """
 
 
@@ -123,7 +116,7 @@ def k_fold_split(X, y, question):
 
 """
 The function below defines the knn and
- ann models required for questions 1 and 3.
+ ann models required for function 1.
 """
 
 
@@ -139,7 +132,7 @@ def knn_ann_model(question):
 
 """
 The function below is used to obtain the
-error rates of knn models only for question 1
+error rates of knn models only for function 1
 """
 
 
@@ -167,7 +160,7 @@ def knn_score(X_train, X_test, y_train, y_test, models):
 
 """
 The function below is used to obtain the error rates
-of CNN model only for question 1
+of CNN model only for function 1
 """
 
 
@@ -193,7 +186,7 @@ def cnn_score(X_train, X_test, y_train, y_test, model):
     return acc
 
 
-# The function below defines the CNN model for question 1 and 4
+# The function below defines the CNN model for function 1 and 2
 
 
 def cnn_model(function):
@@ -238,7 +231,7 @@ def cnn_model(function):
 
 """
 The function below is used to obtain the error rates
-amd predictions of CNN model only for question 4
+amd predictions of CNN model only for function 2
 """
 
 
@@ -284,7 +277,7 @@ def cnn_f2_score(X, y):
 
 
 """
-The 3 functions below model_scoredf_q1, model_scoredf_q3, model_scoredf_q4
+The 2 functions below model_scoredf_f1, model_scoredf_f2
 are used to create the dataframe that contains
 the K-Fold error rates for each classifier.
 They takes list of test errors return by the respective _score() functions.
