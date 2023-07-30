@@ -6,9 +6,6 @@ from scipy.io import loadmat
 from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 
-
-# The code for question1 is adapted from
-# Derek's instruction videos and instruction manuals
 def function1(path):
     test_errors = []
     prediction_accuracy = []
