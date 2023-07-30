@@ -10,12 +10,6 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 
-"""
-This function below creates the kfold_data and kfold_mnist json files.
-The code is taken from the instructions provide for assignment 2 submission.
-"""
-
-
 def save_kfold(kfold_scores: pd.DataFrame, mnist: bool) -> None:
     COLS = [*[f"fold{i}" for i in range(1, 6)], "mean"]
     INDEX = ["svm_linear", "svm_rbf", "rf", "knn1", "knn5", "knn10"]
